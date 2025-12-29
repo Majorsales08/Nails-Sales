@@ -105,12 +105,6 @@ header {
     background-color: var(--accent-roxo);
 }
 
-button{
-    height: 9vh;
-    width: 90vh;
-    
-}
-
 .menu-toggle {
     display: none;
     font-size: 28px;
@@ -303,13 +297,17 @@ button{
     background: var(--dark-roxo);
     color: var(--white);
     border: none;
-    padding: 18px 60px;
-    font-size: 18px;
+    padding: 15px 40px;
+    font-size: 16px;
     border-radius: 50px;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: background 0.3s;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 30px auto 0;
 }
 
 .submit-btn:hover {
@@ -590,10 +588,15 @@ footer {
         font-size: 36px;
     }
 
-    .cta-btn,
-    .submit-btn {
+    .cta-btn {
         padding: 16px 40px;
         font-size: 18px;
+    }
+
+    .submit-btn {
+        padding: 14px 30px;
+        font-size: 14px;
+        max-width: 100%;
     }
 
     .service-card {
