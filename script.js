@@ -26,7 +26,7 @@ document.getElementById('booking-form').addEventListener('submit', function (e) 
     }
 
     // Link do WhatsApp (seu número sem + ou espaços)
-    const whatsappUrl = `https://wa.me/5514988349715?text=${texto}`;
+    const whatsappUrl = `https://w.app/nailssales?text=${texto}`;
 
     // Abre o WhatsApp com a mensagem pré-preenchida
     window.open(whatsappUrl, '_blank');
