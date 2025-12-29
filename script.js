@@ -12,7 +12,6 @@ document.getElementById('booking-form').addEventListener('submit', function (e) 
     const horario = document.getElementById('horario').value;
     const servico = document.getElementById('servico').value;
     const data = document.getElementById('data').value;
-    const mensagem = document.getElementById('mensagem').value.trim();
 
     // Monta a mensagem formatada
     let texto = `*Olá gostaria de marcar um horário*%0A%0A` +
@@ -20,10 +19,6 @@ document.getElementById('booking-form').addEventListener('submit', function (e) 
         `Gostari de fazer ${servico}%0A` +
         `No dia ${data}%0A` +
         `Nesse horário ${horario}%0A` ;
-
-    if (mensagem) {
-        texto += `%0A*Detalhes/Mensagem:*%0A${mensagem}`;
-    }
 
     // Link do WhatsApp (seu número sem + ou espaços)
     const whatsappUrl = `https://w.app/nailssales?text=${texto}`;
