@@ -596,7 +596,7 @@ footer {
     .submit-btn {
         padding: 14px 30px;
         font-size: 14px;
-        max-width: 100%;
+        max-width: 50%;
     }
 
     .service-card {
