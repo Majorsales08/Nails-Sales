@@ -13,15 +13,21 @@ document.getElementById('booking-form').addEventListener('submit', function (e) 
     const servico = document.getElementById('servico').value;
     const data = document.getElementById('data').value;
 
-    // Monta a mensagem formatada
+    // Verifica se os campos obrigatórios estão preenchidos
+    if (!nome || !servico || !data || !horario) {
+        alert("Por favor, preencha todos os campos obrigatórios!");
+        return;
+    }
+
+    // Monta a mensagem formatada (exatamente como você pediu)
     let texto = `*Olá gostaria de marcar um horário*%0A%0A` +
         `Meu Nome é ${nome}%0A` +
-        `Gostari de fazer ${servico}%0A` +
+        `Gostaria de fazer ${servico}%0A` +
         `No dia ${data}%0A` +
-        `Nesse horário ${horario}%0A` ;
+        `Nesse horário ${horario}%0A`;
 
-    // Link do WhatsApp (seu número sem + ou espaços)
-    const whatsappUrl = `https://w.app/nailssales?text=${texto}`;
+    // Link CORRETO do WhatsApp (seu número: 5514988349715)
+    const whatsappUrl = `https://wa.me/5514988349715?text=${texto}`;
 
     // Abre o WhatsApp com a mensagem pré-preenchida
     window.open(whatsappUrl, '_blank');
@@ -29,6 +35,6 @@ document.getElementById('booking-form').addEventListener('submit', function (e) 
     // Mostra mensagem de sucesso
     document.getElementById('form-message').style.display = 'block';
 
-    // Opcional: limpa o formulário após envio
+    // Limpa o formulário após envio
     this.reset();
 });
