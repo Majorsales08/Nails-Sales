@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nails Sales - Design de Unhas & Agendamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo2-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo2-removebg-preview.png" alt="Nails Sales Logo">
+            Nails Sales
+        </div>
+
+        <a href="#booking" class="nav-btn">Agendar Agora</a>
+        <div class="menu-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Agendamento de<br>Nails Sales</h1>
+            <p>Unhas impecáveis com design autêntico e atendimento premium.<br>Seu estilo, nossa arte.</p>
+            <a href="#booking" class="cta-btn">Marcar Horário</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="section-subtitle">Tratamentos exclusivos para realçar sua personalidade com elegância e durabilidade.
+        </p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="ri-hand-heart-line"></i></div>
+                <h3>Manicure Completa</h3>
+                <p>Cutilagem precisa, esmaltação de longa duração e acabamento perfeito.</p>
+                <div class="price">R$ 65,00</div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="ri-brush-line"></i></div>
+                <h3>Alongamentos em gel</h3>
+                <p>Alongamento leve, natural e resistente.</p>
+                <div class="price">R$ 100,00</div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="ri-palette-line"></i></div>
+                <h3>Banho em Gel</h3>
+                <p>ultra-resistente para as unhas naturais.</p>
+                <div class="price">R$ 50,00 </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="ri-magic-line"></i></div>
+                <h3>Manicure </h3>
+                <p>Cutilagem precisa, esmaltação e acabamento perfeito.</p>
+                <div class="price">R$ 35,00</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="ri-football-line"></i></div>
+                <h3>Pedicure</h3>
+                <p>Cuidados completos para pés macios e unhas bem cuidadas.</p>
+                <div class="price">R$ 35,00</div>
+            </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="booking-container">
+            <h2>Agende seu Horário</h2>
+            <p>Preencha o formulário e enviaremos sua solicitação diretamente para nosso WhatsApp para confirmação
+                rápida.</p>
+
+            <form id="booking-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Serviço Desejado</label>
+                        <select id="servico" required>
+                            <option value="">Selecione um serviço</option>
+                            <option>Manicure e Pedicure (Ana Sales)</option>
+                            <option>Alongamentos em Gel (Marjory)</option>
+                            <option>Banho em gel (Marjory)</option>
+                            <option>Manicure (Ana Sales)</option>
+                            <option>Pedicure (Ana Sales)</option>
+                        </select>
+                    </div>
+                    <div class="form-group full">
+                        <label>Data Preferencial</label>
+                        <input type="date" id="data" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Horário Preferencial</label>
+                        <input type="time" id="horario" required>
+                    </div>
+
+                </div>
+                <button type="submit" class="submit-btn">Solicitar Agendamento</button>
+            </form>
+
+            <p id="form-message" style="margin-top: 20px; color: green; font-weight: bold; display: none;">
+                Solicitação enviada! Abra o WhatsApp para confirmar o envio.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <h2 class="section-title">Nossa Equipe</h2>
+        <p class="section-subtitle">Profissionais apaixonadas e qualificadas.</p>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-img">
+                    <img src="img/WhatsApp Image 2025-12-29 at 12.17.47.jpeg" alt="Equipe 1">
+                </div>
+                <div class="team-info">
+                    <h3>Ana Sales</h3>
+                    <span>Manicure</span>
+                    <div class="social-links">
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-img">
+                    <img src="img/1.jpeg" alt="Equipe 2">
+                </div>
+                <div class="team-info">
+                    <h3>Marjory Sales</h3>
+                    <span>Nail Designer</span>
+                    <div class="social-links">
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-info">
+            <h2>Contato & Localização</h2>
+            <div class="contact-item">
+                <div class="contact-icon"><i class="ri-map-pin-line"></i></div>
+                <div class="contact-text">
+                    <h4>Estúdio</h4>
+                    <p>Rua Paes Leme, 234, apto 202 - Centro<br>Marília - SP</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon"><i class="ri-phone-line"></i></div>
+                <div class="contact-text">
+                    <h4>Telefone/WhatsApp</h4>
+                    <a href="https://w.app/nailssales">https://w.app/nailssales</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon"><i class="ri-time-line"></i></div>
+                <div class="contact-text">
+                    <h4>Horário</h4>
+                    <p>Seg e ter: 08h–19h<br>Qua: 08h–17h<br> Qui e Sex: 08h–19h</p>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <div class="map-overlay">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.6246469134203!2d-49.954009024787105!3d-22.2163666135614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bfd73bf277ca51%3A0x1f12ecb58bb308fc!2sR.%20Paes%20Leme%2C%20234%20-%20Centro%2C%20Mar%C3%ADlia%20-%20SP%2C%2017500-150!5e0!3m2!1spt-BR!2sbr!4v1767019722280!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <h3>Encontre-nos Aqui</h3>
+                <p>Rua Paes Leme, 234, apto 202 - Centro, Marília - SP</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <i class="ri-sparkling-fill"></i> Nails Sales
+        </div>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="https://www.instagram.com/un.nails_sales/">Instagram</a>
+        </div>
+        <div class="copyright">
+            © 2025 Nails Sales. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
